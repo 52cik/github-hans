@@ -1,11 +1,9 @@
-!.gitignore
-
-# windows thumbnail cache
-Thumbs.db
-Desktop.ini
-
-# Mac DS_Store Files
+.idea
+.vscode
 .DS_Store
 
-# webstorm
-.idea
+Thumbs.db
+Desktop.ini
+npm-debug.log
+
+node_modules
