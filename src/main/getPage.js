@@ -13,14 +13,14 @@ function getPage() {
   const isOrganization = analyticsLocation === '/<org-login>'; // 组织首页
   const isRepository = analyticsLocation.indexOf('/<user-name>/<repo-name>') > -1; // 仓库页
 
-  // console.log({
-  //   site,
-  //   pathname,
-  //   isLogin,
-  //   isProfile,
-  //   isOrganization,
-  //   isRepository,
-  // });
+//   console.log({
+//     site,
+//     pathname,
+//     isLogin,
+//     isProfile,
+//     isOrganization,
+//     isRepository,
+//   });
 
   let page = pathname;
 
@@ -39,6 +39,16 @@ function getPage() {
   if (isRepository) { // 仓库页 别名
     page = analyticsLocation.replace('/<user-name>/<repo-name>', 'repository');
   }
+
+  console.log({
+    site,
+    page,
+    pathname,
+    isLogin,
+    isProfile,
+    isOrganization,
+    isRepository,
+  });
 
   return {
     site,

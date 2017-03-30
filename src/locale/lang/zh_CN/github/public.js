@@ -1,14 +1,5 @@
 export default {
   static: { // 静态翻译
-    // 未登录部分
-    'Personal': '个人',
-    'Open source': '开源',
-    'Business': '商业',
-    'Pricing': '定价',
-    'Support': '支持',
-    'Sign in': '登录',
-    'Sign up': '注册',
-
     'Search GitHub': 'GitHub 一下，你就知道',
     'This repository': '当前仓库',
     'Search': '搜索',
@@ -17,7 +8,7 @@ export default {
     'Pull requests': '拉取请求',
     'Issues': '问题',
     'Gist': '代码片段',
-    'Your dashboard': '返回首页',
+    'Your dashboard': '返回仪表盘',
 
     'You have no unread notifications': '您没有未读通知',
     'You have unread notifications': '您有未读通知',
@@ -25,10 +16,35 @@ export default {
     'View profile and more': '查看更多信息',
 
     'New repository': '新建仓库',
-    'New organization': '新建组织',
     'Import repository': '导入仓库',
-    'New issue': '新建问题',
+    'New gist': '新建片段',
+    'New organization': '新建组织',
 
+    'Signed in as': '已登录',
+    'Your profile': '简介',
+    'Your stars': '已赞',
+    'Explore': '探索',
+    'Integrations': '集成',
+    'Help': '帮助',
+    'Settings': '设置',
+    'Sign out': '退出',
+
+    // 底部信息
+    'Terms': '团队',
+    'Privacy': '隐私',
+    'Security': '安全',
+    'Status': '状态',
+    'Contact GitHub': '联系 GitHub',
+    'Training': '培训',
+    'Shop': '商店',
+    'Blog': '博客',
+    'About': '关于',
+
+
+    // 开源调查 弹层
+    'Interested in open source?': '对开源感兴趣吗？',
+    'We\'re studying people\'s experiences in open source. Whether you\'re a casual user, just exploring, or a long term contributor, we want to hear from you.': '我们正在研究人们在开源方面的经验。无论你是一个休闲用户，只是探索，或是一个长期的贡献者，我们想听到你的声音。',
+    'Take the Open Source Survey': '参加开源调查',
   },
   regexp: [ // 正则翻译 (公共区域正则会二次调用翻译，为了弥补部分翻译的情况)
     /**

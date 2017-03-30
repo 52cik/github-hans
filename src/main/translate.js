@@ -10,6 +10,8 @@ if (localStorage._GITHUB_LANG_) {
 // 页面信息
 const pageInfo = getPage();
 
+console.log('pageInfo:', pageInfo);
+
 // 语言包对象
 const LANGS = window._GITHUB_LANGS_[window._GITHUB_LANG_];
 const SITE = LANGS[pageInfo.site];

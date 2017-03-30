@@ -13,5 +13,6 @@ function trans() {
 trans(); // 立即翻译
 
 use(['../jquery'], ($) => { // ajax 请求完成后重新翻译
+  $.ajaxSetup({ global: true }); // 触发全局事件
   $(document).ajaxComplete(trans);
 });
