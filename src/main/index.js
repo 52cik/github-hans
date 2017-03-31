@@ -6,13 +6,14 @@ import timeElement from './timeElement'; // 时间节点翻译
  * 翻译页面
  */
 function trans() {
-  timeElement(); // 时间节点翻译
-  walk(document.body); // 遍历文档
+  setTimeout(() => {
+    timeElement(); // 时间节点翻译
+    walk(document.body); // 遍历文档
+  }, 99);
 }
 
 trans(); // 立即翻译
 
 use(['../jquery'], ($) => { // ajax 请求完成后重新翻译
-  $.ajaxSetup({ global: true }); // 触发全局事件
-  $(document).ajaxComplete(trans);
+  $(document).ajaxSuccess(trans);
 });
