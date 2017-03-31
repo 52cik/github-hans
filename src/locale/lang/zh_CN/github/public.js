@@ -40,6 +40,15 @@ export default {
     'Blog': '博客',
     'About': '关于',
 
+    // 公共动作词
+    'Followers': '粉丝',
+    'Follow': '关注',
+    'Unfollow': '取消关注',
+    'Watch': '关注',
+    'Unwatch': '取消关注',
+    'Star': '点赞',
+    'Unstar': '取消点赞',
+    'Fork': '派生',
 
     // 开源调查 弹层
     'Interested in open source?': '对开源感兴趣吗？',
@@ -92,7 +101,7 @@ export default {
     }],
 
     // 仓库删除提示
-    [/Your repository "([^"]+)"was successfully deleted\./, '您的 "$1"仓库已被成功删除。'],
+    [/Your repository '([^']+)'was successfully deleted\./, '您的 \'$1\'仓库已被成功删除。'],
     // 邮箱验证提示
     [/An email containing verification instructions was sent to (.+)\./, '验证邮件已发送到 $1。'],
     // 头像下面的注册信息

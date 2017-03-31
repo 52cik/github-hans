@@ -15,6 +15,10 @@ export default {
     'Sources': '源码',
     'Forks': '派生',
 
+    'Switch dashboard context': '切换默认身份',
+    'Manage organizations': '管理组织',
+    'Create organization': '创建组织',
+
     // 动态部分的状态词
     'starred': '赞了',
     'forked': '派生了',
@@ -34,6 +38,6 @@ export default {
     'More': '更多',
   },
   regexp: [ // 正则翻译
-    [/Show (\d+) more repository…/, '显示 $1 个更多的仓库…'],
+    [/Show (\d+) more repositor(y|ies)…/, '显示 $1 个更多的仓库…'],
   ],
 };
