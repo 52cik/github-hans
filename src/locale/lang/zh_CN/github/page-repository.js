@@ -57,6 +57,9 @@ locals.repository = {
     'Use an SSH key and passphrase from account.': '使用 SSH 密钥和密码访问。',
     'Use Git or checkout with SVN using the web URL.': '使用 git 或 svn 检出该仓库。',
 
+    'Your recently pushed branches:': '你最近推送的分支:',
+    'Compare & pull request': '比较 & 拉取请求',
+
     'Branch:': '分支:',
     'Switch branches/tags': '选择分支或标签',
     'Find or create a branch…': '查找或创建分支…',
