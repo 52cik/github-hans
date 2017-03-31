@@ -16,4 +16,8 @@ trans(); // 立即翻译
 
 use(['../jquery'], ($) => { // ajax 请求完成后重新翻译
   $(document).ajaxSuccess(trans);
+
+  // https://github.com/github/include-fragment-element
+  // 异步元素加载完后执行
+  $('include-fragment').on('loadend', trans);
 });
