@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "dev": "webpack -w",
+    "dev": "NODE_ENV=development webpack -w",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
