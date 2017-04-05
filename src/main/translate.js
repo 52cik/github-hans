@@ -1,22 +1,3 @@
-import getPage from './getPage'; // 获取站点信息
-
-// 获取翻译语言 (方便扩展其他语言包)
-if (localStorage._GITHUB_LANG_) {
-  window._GITHUB_LANG_ = localStorage._GITHUB_LANG_;
-} else {
-  window._GITHUB_LANG_ = 'zh_CN'; // 默认中文
-}
-
-// 页面信息
-const pageInfo = getPage();
-
-console.log('pageInfo:', pageInfo);
-
-// 语言包对象
-const LANGS = window._GITHUB_LANGS_[window._GITHUB_LANG_];
-const SITE = LANGS[pageInfo.site];
-
-
 /**
  * 翻译核心
  *
@@ -26,22 +7,22 @@ const SITE = LANGS[pageInfo.site];
  * @returns {string|boolean}
  */
 function locale(key, page) {
-  page = page || pageInfo.page;
+  page = page || _GITHUB_SITE_.pageInfo.page;
 
   // 不存在的翻译内容
-  if (!SITE || !SITE[page] || !SITE[page].static) {
+  if (!_GITHUB_SITE_ || !_GITHUB_SITE_[page] || !_GITHUB_SITE_[page].static) {
     return false;
   }
 
   // 静态字典翻译
-  let str = SITE[page].static[key];
+  let str = _GITHUB_SITE_[page].static[key];
 
   if (str) { // 翻译成功
     return str;
   }
 
   // 正则翻译
-  const res = SITE[page].regexp;
+  const res = _GITHUB_SITE_[page].regexp;
 
   if (res) {
     for (let i = 0, len = res.length; i < len; i++) {

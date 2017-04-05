@@ -26,34 +26,49 @@ function getPage() {
 
   if (pathname === '/') { // 首页 别名
     page = isLogin ? 'dashboard' : pathname;
-  }
-
-  if (isProfile) { // 个人主页 别名
+  } else if (isProfile) { // 个人主页 别名
     page = 'profile';
-  }
-
-  if (isOrganization) { // 组织主页 别名
+  } else if (isOrganization) { // 组织主页 别名
     page = 'organizations';
-  }
-
-  if (isRepository) { // 仓库页 别名
+  } else if (isRepository) { // 仓库页 别名
     page = analyticsLocation.replace('/<user-name>/<repo-name>', 'repository');
   }
 
-  console.log({
-    site,
-    page,
-    pathname,
-    isLogin,
-    isProfile,
-    isOrganization,
-    isRepository,
-  });
+  // console.log({
+  //   site,
+  //   page,
+  //   pathname,
+  //   isLogin,
+  //   isProfile,
+  //   isOrganization,
+  //   isRepository,
+  // });
 
   return {
     site,
     page,
   };
+}
+
+/**
+ * 设置页面信息
+ */
+export function setPageInfo() {
+  // 获取翻译语言 (方便扩展其他语言包)
+  if (localStorage._GITHUB_LANG_) {
+    window._GITHUB_LANG_ = localStorage._GITHUB_LANG_;
+  } else {
+    window._GITHUB_LANG_ = 'zh_CN'; // 默认中文
+  }
+
+  // 页面信息
+  const pageInfo = getPage();
+
+  console.log('pageInfo:', pageInfo);
+
+  // 语言包对象
+  window._GITHUB_SITE_ = _GITHUB_LANGS_[_GITHUB_LANG_][pageInfo.site];
+  _GITHUB_SITE_.pageInfo = pageInfo;
 }
 
 // 导出
