@@ -11,6 +11,7 @@ export default {
     'Followers': '粉丝',
     'Following': '关注',
 
+    // 概述 https://github.com/52cik
     'Popular repositories': '流行的仓库',
     'Pinned repositories': '固定的仓库',
     'Customize your pinned repositories': '自定义您的固定仓库',
@@ -65,8 +66,53 @@ export default {
     'First repository': '第一个仓库',
     'Joined GitHub': '刚注册 GitHub',
     'Show more activity': '显示更多',
+
+
+    // 仓库页 https://github.com/52cik?tab=repositories
+    'Search repositories…': '搜索这些查库…',
+    'New': '新建',
+
+    'Type:': '类型:',
+    'Select type:': '选择类型:',
+    'Language:': '语言:',
+    'Public': '公共 (Public)',
+    'Private': '私有 (Private)',
+    'Sources': '源码 (Sources)',
+    'Forks': '派生 (Forks)',
+    'Mirrors': '镜像 (Mirrors)',
+    'Select language:': '选择语言:',
+    'All': '所有 (All)',
+
+    'result for': '个类型为',
+    'results for': '个类型为',
+    'repositorie': '的仓库',
+    'repositories': '的仓库',
+    'repositorie written in': '的仓库使用',
+    'repositories written in': '的仓库使用',
+    'Clear filter': '清除过滤',
+
+    'public': '公共',
+    'private': '私有',
+    'source': '源码',
+    'forked': '派生',
+    'mirror': '镜像',
+
+    'Updated': '更新',
+    'Forked from': '派生自',
+
+    // 已赞 https://github.com/52cik?tab=stars
+    'Search starred repositories…': '搜索点赞的仓库…',
+    'All languages': '所有语言',
+    'Sort:': '排序:',
+    'Sort options': '排序选项',
+    'Recently starred': '最近关注的',
+    'Recently active': '最近活动的',
+    'Most stars': '最多赞的',
+
+    'Previous': '上一页',
+    'Next': '下一页',
   },
-  regexp: [ // 正则翻译
+  regexp: [ // 正则翻译 (注意优先顺序)
     [/([\d,]+) contributions in the last year/, '$1 次贡献在过去的一年中'],
     [/Created (\d+)[\s\r\n]+commits? in[\s\r\n]+(\d+)[\s\r\n]+repositor(y|ies)/, '在 $1 个库中创建了 $2 次提交'],
     [/Opened (\d+)[\s\r\n]+issues?[\s\r\n]+in (\d+) repositor(y|ies)/, '在 $1 个库中打开了 $2 个问题'],
