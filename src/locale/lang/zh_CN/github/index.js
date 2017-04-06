@@ -8,6 +8,7 @@ import login from './page-login';
 import passwordReset from './page-password_reset';
 import profile from './page-profile';
 import repository from './page-repository';
+import settings from './page-settings';
 
 
 // 导出翻译
@@ -18,6 +19,7 @@ export default {
   dashboard, // 登录后首页 (别名配置)
   profile, // 简介页面
   ...repository, // 仓库页面
+  ...settings, // 设置页面
 
   '/': index, // 首页
   '/join': join, // 注册
