@@ -7,7 +7,9 @@ locals.repository = {
     'Code': '代码',
     'Pulse': '统计',
     'Graphs': '图表',
+    'Project': '项目',
     'Projects': '项目',
+    'Insights': '观察',
 
     // 关注通知设置
     'Notifications': '通知类型',
@@ -33,7 +35,7 @@ locals.repository = {
 
     // 添加标签
     'Topics': '标签',
-    '(separate with spaces)': '(使用空格分隔)',
+    '(separate with spaces)': '（使用空格分隔）',
     'Add topics to categorize your repository and make it more discoverable.': '添加标签分类您的仓库，使其更容易被发现。',
     'Suggested:': '建议:',
     'Done': '完成',
@@ -81,10 +83,21 @@ locals.repository = {
   ],
 };
 
+// 问题页面
+locals['repository/issues/index'] = {
+  static: { // 静态翻译
+  },
+  regexp: [ // 正则翻译
+  ],
+};
 
-
-
-
+// 拉取请求页面
+locals['repository/pull_requests/index'] = {
+  static: { // 静态翻译
+  },
+  regexp: [ // 正则翻译
+  ],
+};
 
 
 // 设置部分 公共菜单

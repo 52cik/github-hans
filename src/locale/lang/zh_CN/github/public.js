@@ -7,6 +7,7 @@ export default {
     'Pull Requests': '拉取请求',
     'Pull requests': '拉取请求',
     'Issues': '问题',
+    'Marketplace': '市场',
     'Gist': '代码片段',
     'Your dashboard': '返回仪表盘',
 

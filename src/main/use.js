@@ -7,7 +7,7 @@
  */
 function use(deps, cb, path) {
   let iCount = 0;
-  let maxTimes = 20;
+  const maxTimes = 20;
 
   setTimeout(function callee() {
     if (!window.define) {
@@ -16,9 +16,10 @@ function use(deps, cb, path) {
       }
       return setTimeout(callee, 99);
     }
-    const name = path ? path : `github/hans-hook-${Date.now().toString(16)}`;
+    const name = path || `github/hans-hook-${Date.now().toString(16)}`;
     window.define(name, deps, cb);
-    window.ghImport(name)['catch'](e => setTimeout(() => { throw e; }));
+    window.ghImport(name).catch(e => setTimeout(() => { throw e; }));
+    return false;
   }, 99);
 }
 

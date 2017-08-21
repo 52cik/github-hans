@@ -36,6 +36,10 @@ export default {
     'commented on issue': '提交了评论',
 
     'More': '更多',
+
+    'Subscribe to': '订阅到',
+    'your': '您的',
+    'news feed': '新闻资讯中 (feed)',
   },
   regexp: [ // 正则翻译
     [/Show (\d+) more repositor(y|ies)…/, '显示 $1 个更多的仓库…'],
