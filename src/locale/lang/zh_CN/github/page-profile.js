@@ -115,7 +115,7 @@ export default {
   regexp: [ // 正则翻译 (注意优先顺序)
     [/([\d,]+) contributions in the last year/, '$1 次贡献在过去的一年中'],
     [/Created (\d+)[\s\r\n]+commits? in[\s\r\n]+(\d+)[\s\r\n]+repositor(y|ies)/, '在 $2 个库中创建了 $1 次提交'],
-    [/Opened (\d+)[\s\r\n]+issues?[\s\r\n]+in (\d+)[\s\r\n]+ repositor(y|ies)/, '在 $2 个库中打开了 $1 个问题'],
+    [/Opened (\d+)[\s\r\n]+issues?[\s\r\n]+in (\d+)[\s\r\n]+repositor(y|ies)/, '在 $2 个库中打开了 $1 个问题'],
     [/Created (\d+)[\s\r\n]+repositor(y|ies)/, '创建了 $1 个仓库'],
     [/Opened (\d+)[\s\r\n]+other[\s\r\n]+pull requests?/, '发起了 $1 个拉取请求'],
     [/Opened (\d+)[\s\r\n]+other[\s\r\n]+issues?/, '开了 $1 个其他问题'],
