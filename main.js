@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub 汉化插件
 // @description  汉化 GitHub 界面的部分菜单及内容。
-// @copyright    2016, 楼教主 (http://www.52cik.com/)
+// @copyright    2019, huegege (http://www.52cik.com/)
 // @icon         https://assets-cdn.github.com/pinned-octocat.svg
 // @version      1.6.4
 // @author       楼教主
