@@ -305,7 +305,7 @@
         });
 
         ghImport('github/hans-contributions')['catch'](function(e) {
-            setTimeout(function() { throw e });
+            setTimeout(function() { throw e； });
         });
     }
 
